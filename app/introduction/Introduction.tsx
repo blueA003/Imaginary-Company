@@ -6,8 +6,8 @@ export default function Introduction() {
   return (
     <div>
       <div className="bg-[url('/images/bg1.jpg')] bg-center bg-cover bg-no-repeat">
-        <div className="text-white h-screen py-50 fade-in flex justify-center items-start text-6xl font-bold">
-          <div className="text-center leading-normal">
+        <div className="text-white h-screen py-50 fade-in flex justify-center items-start text-6xl ">
+          <div className="text-center leading-normal font-aggro">
             기술로 더 <br />나은 일상을 만듭니다
           </div>
         </div>
@@ -23,7 +23,7 @@ export default function Introduction() {
         <ScrollText></ScrollText>
       </div>
       <div className="py-50 text-center">
-        <div className="font-bold text-5xl py-10">
+        <div className="text-5xl py-10 font-aggro">
           우리의 비전
         </div>
         <div className="text-3xl leading-normal">

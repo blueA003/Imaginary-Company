@@ -33,7 +33,7 @@ export default function ScrollText() {
     <div className="py-20 bg-[url('/images/bg8.jpg')] bg-center bg-cover bg-no-repeat text-white">
       <div
         ref={ref}
-        className="text-5xl font-bold text-center"
+        className="text-5xl text-center font-aggro"
       >
         우리가 하는 일
       </div>

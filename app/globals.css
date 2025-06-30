@@ -33,3 +33,44 @@ body {
   margin: 0;
   padding: 0;
 }
+
+/* 반응형 */
+@media (max-width: 870px) {
+  .below870\:hidden {
+    display: none !important;
+  }
+
+  .below870\:flex {
+    display: flex !important;
+  }
+
+  .below870\:block {
+    display: block !important;
+  }
+}
+
+@media (min-width: 871px) {
+  .above870\:hidden {
+    display: none !important;
+  }
+
+  .above870\:flex {
+    display: flex !important;
+  }
+
+  .above870\:block {
+    display: block !important;
+  }
+}
+
+/* 폰트 */
+@font-face {
+  font-family: 'SBAggroB';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-aggro {
+  font-family: 'SBAggroB', sans-serif;
+}

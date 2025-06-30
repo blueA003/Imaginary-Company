@@ -26,13 +26,13 @@ export default function Header() {
       <div>
         <div className="h-full w-full flex justify-center items-center px-10 ">
           <Image src={'/images/icon.jpg'} alt='icon' width={40} height={40}/>
-          <div className="pl-3 text-4xl font-bold">
+          <div className="pl-3 text-4xl font-bold font-aggro">
             VCSoluna
           </div>
         </div>
       </div>
       <div className="flex flex-row">
-        <div className="hidden sm:flex flex-row px-10">
+        <div className="above870:flex below870:hidden flex-row px-10">
           {headerList.map((item, index)=>(
             <div key={index} className="px-2">
               <div className="p-3 hover:bg-gray-200 hover:text-blue-500 rounded cursor-pointer" onClick={() => handle(item.path)}>
@@ -41,13 +41,13 @@ export default function Header() {
             </div>
           ))}
         </div>
-        <div className="flex items-center justify-center sm:hidden pr-3">
+        <div className="above870:hidden below870:flex items-center justify-center pr-3">
           <FiMenu className="text-3xl cursor-pointer" onClick={()=> setOpen(true)}/>
         </div>
         <div
-          className={`fixed top-0 left-0 w-full h-[320px] bg-white z-1 transform
-            transition-transform duration-300 border-b border-gray-200 sm:hidden ${
-            open ? 'translate-y-0' : 'translate-y-[-320px]'}`}
+          className={`fixed top-0 left-0 w-full h-[320px] bg-white z-40 transition-transform duration-300 border-b border-gray-200 above870:hidden ${
+            open ? 'translate-y-0' : '-translate-y-full'
+          }`}
         >
           <div className="p-4 flex justify-end">
             <AiOutlineClose onClick={()=> setOpen(false)} className="text-3xl cursor-pointer hover:text-gray-400"/>
